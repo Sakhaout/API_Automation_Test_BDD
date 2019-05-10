@@ -3,11 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="API.Test.GetCallWithBDD">
+      <class name="API.Test.SimpleGetTest">
         <methods>
-          <include name="get_circuitNumber_2017_Seasion"/>
+          <include name="getHeader"/>
+          <include name="getValidateStatus"/>
+          <include name="getStatusLine"/>
+          <include name="IteratingOverHeaders"/>
         </methods>
-      </class> <!-- API.Test.GetCallWithBDD -->
+      </class> <!-- API.Test.SimpleGetTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
