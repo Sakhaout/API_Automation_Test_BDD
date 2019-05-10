@@ -6,7 +6,7 @@ import static org.hamcrest.Matchers.*;
 
 /*** I am using https://ergast.com/mrd/ site for API testing ***/
 
-public class GetCallWithBDD {
+public class RestTest {
 	
 	
 	@Test
@@ -25,3 +25,7 @@ public class GetCallWithBDD {
 	
 
 }
+
+
+
+

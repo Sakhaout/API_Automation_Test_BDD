@@ -5,6 +5,8 @@
     <classes>
       <class name="API.Test.SimpleGetTest">
         <methods>
+          <include name="getJSON_File"/>
+          <include name="getStreamSize"/>
           <include name="getHeader"/>
           <include name="getValidateStatus"/>
           <include name="getStatusLine"/>

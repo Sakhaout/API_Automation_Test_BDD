@@ -1,25 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12811" started-at="2019-05-10T04:39:45Z" finished-at="2019-05-10T04:39:58Z">
+  <suite name="Default suite" duration-ms="7130" started-at="2019-05-10T08:55:28Z" finished-at="2019-05-10T08:55:35Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12811" started-at="2019-05-10T04:39:45Z" finished-at="2019-05-10T04:39:58Z">
+    <test name="Default test" duration-ms="7130" started-at="2019-05-10T08:55:28Z" finished-at="2019-05-10T08:55:35Z">
       <class name="API.Test.SimpleGetTest">
-        <test-method status="PASS" signature="IteratingOverHeaders()[pri:0, instance:API.Test.SimpleGetTest@1d057a39]" name="IteratingOverHeaders" duration-ms="11689" started-at="2019-05-10T04:39:45Z" finished-at="2019-05-10T04:39:57Z">
+        <test-method status="PASS" signature="IteratingOverHeaders()[pri:0, instance:API.Test.SimpleGetTest@14acaea5]" name="IteratingOverHeaders" duration-ms="5407" started-at="2019-05-10T08:55:28Z" finished-at="2019-05-10T08:55:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- IteratingOverHeaders -->
-        <test-method status="PASS" signature="getHeader()[pri:0, instance:API.Test.SimpleGetTest@1d057a39]" name="getHeader" duration-ms="300" started-at="2019-05-10T04:39:57Z" finished-at="2019-05-10T04:39:57Z">
+        <test-method status="PASS" signature="getHeader()[pri:0, instance:API.Test.SimpleGetTest@14acaea5]" name="getHeader" duration-ms="362" started-at="2019-05-10T08:55:33Z" finished-at="2019-05-10T08:55:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getHeader -->
-        <test-method status="PASS" signature="getStatusLine()[pri:0, instance:API.Test.SimpleGetTest@1d057a39]" name="getStatusLine" duration-ms="344" started-at="2019-05-10T04:39:57Z" finished-at="2019-05-10T04:39:57Z">
+        <test-method status="PASS" signature="getJSON_File()[pri:0, instance:API.Test.SimpleGetTest@14acaea5]" name="getJSON_File" duration-ms="315" started-at="2019-05-10T08:55:34Z" finished-at="2019-05-10T08:55:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getJSON_File -->
+        <test-method status="PASS" signature="getStatusLine()[pri:0, instance:API.Test.SimpleGetTest@14acaea5]" name="getStatusLine" duration-ms="319" started-at="2019-05-10T08:55:34Z" finished-at="2019-05-10T08:55:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getStatusLine -->
-        <test-method status="PASS" signature="getValidateStatus()[pri:0, instance:API.Test.SimpleGetTest@1d057a39]" name="getValidateStatus" duration-ms="354" started-at="2019-05-10T04:39:57Z" finished-at="2019-05-10T04:39:58Z">
+        <test-method status="PASS" signature="getStreamSize()[pri:0, instance:API.Test.SimpleGetTest@14acaea5]" name="getStreamSize" duration-ms="255" started-at="2019-05-10T08:55:34Z" finished-at="2019-05-10T08:55:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getStreamSize -->
+        <test-method status="PASS" signature="getValidateStatus()[pri:0, instance:API.Test.SimpleGetTest@14acaea5]" name="getValidateStatus" duration-ms="271" started-at="2019-05-10T08:55:35Z" finished-at="2019-05-10T08:55:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getValidateStatus -->

@@ -26,14 +26,14 @@ public class BaseClass {
 		}
 	}
 	
-	public Response initializatiom() {
+	public Response initialization() {
 		String url = properties_obj.getProperty("url");
 		String urn = properties_obj.getProperty("urn");
 		String URI = url+urn;
 		RestAssured.baseURI = url;
 		RequestSpecification httpRequest = RestAssured.given();
 		Response response = httpRequest.request(Method.GET,urn);
-		return (Response) httpRequest;
+		return response;
 	}
 
 }

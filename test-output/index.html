@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\Hossain Sakhaout\AppData\Local\Temp\testng-eclipse-1918581997\testng-customsuite.xml</span>
+                    <span>C:\Users\Hossain Sakhaout\AppData\Local\Temp\testng-eclipse--792068265\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">6 methods,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -112,7 +112,17 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="API.Test.SimpleGetTest" hash-for-method="getJSON_File">getJSON_File</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="API.Test.SimpleGetTest" hash-for-method="getStatusLine">getStatusLine</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="API.Test.SimpleGetTest" hash-for-method="getStreamSize">getStreamSize</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -154,9 +164,23 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="getJSON_File">
+                  </a> <!-- getJSON_File -->
+                  <span class="method-name">getJSON_File</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="getStatusLine">
                   </a> <!-- getStatusLine -->
                   <span class="method-name">getStatusLine</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getStreamSize">
+                  </a> <!-- getStreamSize -->
+                  <span class="method-name">getStreamSize</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -171,7 +195,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Hossain Sakhaout\AppData\Local\Temp\testng-eclipse-1918581997\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Hossain Sakhaout\AppData\Local\Temp\testng-eclipse--792068265\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -220,28 +244,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'IteratingOverHeaders')
 data.setCell(0, 2, 'API.Test.SimpleGetTest')
-data.setCell(0, 3, 11689);
+data.setCell(0, 3, 5407);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'getValidateStatus')
+data.setCell(1, 1, 'getHeader')
 data.setCell(1, 2, 'API.Test.SimpleGetTest')
-data.setCell(1, 3, 354);
+data.setCell(1, 3, 362);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'getStatusLine')
 data.setCell(2, 2, 'API.Test.SimpleGetTest')
-data.setCell(2, 3, 344);
+data.setCell(2, 3, 319);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'getHeader')
+data.setCell(3, 1, 'getJSON_File')
 data.setCell(3, 2, 'API.Test.SimpleGetTest')
-data.setCell(3, 3, 300);
+data.setCell(3, 3, 315);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'getValidateStatus')
+data.setCell(4, 2, 'API.Test.SimpleGetTest')
+data.setCell(4, 3, 271);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'getStreamSize')
+data.setCell(5, 2, 'API.Test.SimpleGetTest')
+data.setCell(5, 3, 255);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 12 seconds</span>
+              <span class="suite-total-time">Total running time: 6 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -274,15 +306,23 @@ return data;
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getHeader</span>
-                <span class="method-start">11694 ms</span>
+                <span class="method-start">5422 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getJSON_File</span>
+                <span class="method-start">5784 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getStatusLine</span>
-                <span class="method-start">11999 ms</span>
+                <span class="method-start">6146 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getStreamSize</span>
+                <span class="method-start">6465 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getValidateStatus</span>
-                <span class="method-start">12348 ms</span>
+                <span class="method-start">6725 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

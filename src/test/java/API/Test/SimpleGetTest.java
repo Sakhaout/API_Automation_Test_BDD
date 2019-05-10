@@ -1,6 +1,9 @@
 package API.Test;
 
+import java.io.InputStream;
+
 import org.testng.Assert;
+
 import org.testng.annotations.Test;
 
 import APIAutomationTest.BaseClass;
@@ -11,6 +14,8 @@ import io.restassured.response.Response;
 
 public class SimpleGetTest extends BaseClass {
 	
+
+	
 //	@Test
 //	public void getDetails() {
 //		Response response = initializatiom();
@@ -20,7 +25,7 @@ public class SimpleGetTest extends BaseClass {
 	
 	@Test
 	public void getValidateStatus() {
-		Response response = initializatiom();
+		Response response = initialization();
 		int statusCode = response.getStatusCode();
 		Assert.assertEquals(statusCode, 200);
 		
@@ -28,7 +33,7 @@ public class SimpleGetTest extends BaseClass {
 	
 	@Test
 	public void getStatusLine() {
-		Response response = initializatiom();
+		Response response = initialization();
 		String statusLine = response.getStatusLine();
 		System.out.println("Status line is: "+statusLine);
 		Assert.assertEquals(statusLine, "HTTP/1.1 200 OK");
@@ -36,7 +41,7 @@ public class SimpleGetTest extends BaseClass {
 	
 	@Test
 	public void getHeader() {
-		Response response = initializatiom();
+		Response response = initialization();
 		String containType = response.header("Contain-Type");
 		System.out.println("Contain-Type value: "+containType);
 		
@@ -46,9 +51,9 @@ public class SimpleGetTest extends BaseClass {
 	
 	@Test
 	public void IteratingOverHeaders() {
-		Response response = initializatiom();
+		Response response = initialization();
 		Headers allHeaders = response.headers();
-		System.out.println("********************");
+		System.out.println("*********Printing Header***********");
 		for(Header header : allHeaders) {
 			 System.out.println("Key: " + header.getName() + " ,  Value: " + header.getValue());
 		 }
@@ -56,4 +61,23 @@ public class SimpleGetTest extends BaseClass {
 
 
 	}
+	
+	
+	@Test
+	public void getJSON_File() {
+		String response = initialization().asString();
+		System.out.println("*********Printing JSON Response***********");
+		System.out.println("JSON response \n\n" +response);
+		System.out.println("********************");
+	}
+	
+	@Test
+	public void getStreamSize() {
+		InputStream stream = initialization().asInputStream();
+		int streamSize = stream.toString().length();
+		System.out.println("JSON stream " +streamSize);
+
+	}
+
+	
 }
